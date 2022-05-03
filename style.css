@@ -1,0 +1,88 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 550px;
+    width: 400px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    overflow-y: auto;
+}
+.top{
+    background-color: rgb(171, 48, 190);
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding-top: 2rem;
+}
+button{
+    width: 5rem;
+    height: 3rem;
+    border: none;
+    background-color: rgb(154, 208, 235);
+    font-size: 1rem;
+}
+.inp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#input{
+    height: 3rem;
+    width: 63%;
+    outline: none;
+    border: none;
+    background:white;
+    padding: 0 10px;
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
+#input::placeholder{
+    color: rgb(55, 53, 57);
+}
+
+ul li{
+    color: #333;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: .6rem 2rem;
+    border: 1px solid white;
+}
+ul li:nth-child(even){
+    background-color: rgba(173, 206, 230, 0.9);
+    color: black;
+}
+
+ul .fa-check, .fa-times{
+    position: absolute;
+    cursor: pointer;
+}
+
+ul .fa-check{
+    left: .6rem;
+}
+
+ul .fa-times{
+    font-size: 1rem;
+    font-weight: 200;
+    right: 15px;
+}
+
+ul .checked{
+    background: rgb(82, 148, 235);
+    color: white;
+    text-decoration: line-through;
+    transition: .2s;
+}
