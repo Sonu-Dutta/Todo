@@ -3,6 +3,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(220, 233, 245);
 }
 
 .container{
