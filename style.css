@@ -1,9 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 body{
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(220, 233, 245);
+    background-color: rgb(205, 214, 231);
 }
 
 .container{
@@ -13,57 +21,65 @@ body{
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.5);
     overflow-y: auto;
+    margin: 0 1.7rem;
+    background-color: white;
+}
+
+h1{
+    text-align: center;
 }
 .top{
-    background-color: rgb(171, 48, 190);
-    height: 9rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 5px;
     flex-direction: column;
+    background-color: rgb(176, 54, 197);
     color: white;
-    padding-top: 2rem;
-}
-button{
-    width: 5rem;
-    height: 3rem;
-    border: none;
-    background-color: rgb(154, 208, 235);
-    font-size: 1rem;
-}
-.inp{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 2rem;
 }
 
 #input{
-    height: 3rem;
-    width: 63%;
+    height: 50px;
+    width: 76%;
     outline: none;
     border: none;
-    background:white;
+    background-color: white;
     padding: 0 10px;
     margin: 15px 0;
     font-size: 1rem;
 }
 
-#input::placeholder{
-    color: rgb(55, 53, 57);
+.inp{
+    display: flex;
+}
+
+button{
+    width: 5rem;
+    height: 3.1rem;
+    border: none;
+    padding:.9rem 1rem;
+    background-color: rgb(118, 177, 224);
+    position: relative;
+    font-size: 1.2rem;
+    top: .96rem;
+}
+
+button:hover{
+    background-color: rgb(153, 190, 221);
 }
 
 ul li{
+    background: rgb(220, 237, 241);
     color: #333;
     height: 40px;
+    margin: .2rem 0;
     position: relative;
     display: flex;
     align-items: center;
     padding: .6rem 2rem;
-    border: 1px solid white;
 }
 ul li:nth-child(even){
-    background-color: rgba(173, 206, 230, 0.9);
     color: black;
+    background-color: rgb(243, 246, 247);
 }
 
 ul .fa-check, .fa-times{
@@ -72,17 +88,15 @@ ul .fa-check, .fa-times{
 }
 
 ul .fa-check{
-    left: .6rem;
+    left: .7rem;
 }
 
 ul .fa-times{
-    font-size: 1rem;
-    font-weight: 200;
-    right: 15px;
+    right:.7rem;
 }
 
 ul .checked{
-    background: rgb(82, 148, 235);
+    background: rgb(64, 108, 231);
     color: white;
     text-decoration: line-through;
     transition: .2s;
